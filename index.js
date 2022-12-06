@@ -18,6 +18,9 @@ const server = https.createServer((req, res) => {
   }
 })
 
-server.listen(process.env.port, process.env.hostname, () => {
-    console.log(`Server running at http://${process.env.hostname}:${process.env.port}/`);
-})
+server.listen()
+
+// Use this to test on local
+// server.listen(process.env.port, process.env.hostname, () => {
+//     console.log(`Server running at http://${process.env.hostname}:${process.env.port}/`);
+// })
